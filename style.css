@@ -1,0 +1,104 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: 600; /* Bold weight */
+    text-align: center;
+    color: #333; /* Dark gray color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 1.5rem 0; /* Margin for spacing */
+    padding: 0.5rem 1rem; /* Padding for a bit of internal space */
+    background: linear-gradient(135deg, #7b30cc 0%, #5090ff 100%);
+    color: #fff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#topics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#topics ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+
+.demo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 3rem;
+    border: 2px solid; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow for better visibility */
+    padding: 4px;
+    background: linear-gradient(135deg, #7b30cc 0%, #5090ff 100%);
+}
+
+.demo-text{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.demo-image{
+    border: 2px solid; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow for better visibility */
+    padding: 0px;
+}
+
+#end-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 3rem;
+    border: 2px solid; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow for better visibility */
+    background-image: url('images/avengers.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 7rem;
+    z-index: 1;
+}
+
+#end-text-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7b30cc 0%, #5090ff 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#end-text-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7b30cc 0%, #5090ff 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}

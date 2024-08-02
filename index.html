@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Demonstration</title>
+    <link rel="stylesheet" href="/mysql demo/style.css">
+</head>
+<body>
+
+    <h1>MySQL Demonstration</h1>
+    
+    <h2>
+        This is a short demonstration to show what I can do with MySQL
+    </h2>
+    
+        <div id="topics">
+        Topics covered:
+        <ul>
+            <li>Creating Tables</li>
+            <li>Inserting Data</li>
+            <li>Constraints</li>
+            <li>Update</li>
+            <li>Queries</li>
+            <li>Wildcards</li>
+            <li>Set Null</li>
+            <li>Cascade</li>
+            <li>Procedures</li>
+            <li>Variables</li>
+            <li>CASE Statement</li>
+            <li>Joins</li>
+            <li>View</li>
+        </ul>
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            In this demo I will create and modify a student course enrolment system
+        </div>
+        <img src="images/1.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            I will create 3 tables; Students, Courses and Enrolments.
+            Enrolments is linked to Students and Courses via primary 
+            and foreign keys.
+        </div>
+        <img src="images/2.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Insert sample data into tables
+        </div>
+        <img src="images/3-1.PNG" alt="demo image" class="demo-image">
+        <img src="images/3-2.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Check to see if data was inserted correctly
+        </div>
+        <img src="images/4-1.PNG" alt="demo image" class="demo-image">
+        <img src="images/4-2.PNG" alt="demo image" class="demo-image">
+        <img src="images/4-3.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Let's say I want to manually update Peter Parker's Grade in Web Development from an A to an A*.
+            Find the student ID and the course ID first...
+        </div>
+        <img src="images/5-1.PNG" alt="demo image" class="demo-image">
+        <img src="images/5-2.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            And then update using the IDs
+        </div>
+        <img src="images/6.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Confirm it works
+        </div>
+        <img src="images/7.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Updating grades automatically is probably easier in the long run,
+            so I will create a procedure to do this
+        </div>
+        <img src="images/8.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Now just call the procedure
+        </div>
+        <img src="images/9.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Now let's say Frank Castle wants to enrol in medical science.
+            I can also create a procedure for this.
+        </div>
+        <img src="images/10.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Call the procedure
+        </div>
+        <img src="images/11.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Check to see if it added succesfully
+        </div>
+        <img src="images/12.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Both of these procedures are similar in that they locate
+            IDs based on the parameters, and then save the iDs as 
+            temporary variables to use in the final update stage
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            If I want to organize the students based on their grades
+            I can use the CASE statement
+        </div>
+        <img src="images/13-1.PNG" alt="demo image" class="demo-image">
+        <img src="images/13-2.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Creating views can also make the data easier to read
+        </div>
+        <img src="images/14.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-text">
+            Check that it worked
+        </div>
+        <img src="images/15.PNG" alt="demo image" class="demo-image">
+    </div>
+
+    <div id="end-container">
+        <div id="end-text-left">The End</div>
+        <div></div>
+        <div id="end-text-right">Niall Quinn
+            <br>
+            01/08/24
+        </div>
+    </div>
+
+</body>
+</html>
